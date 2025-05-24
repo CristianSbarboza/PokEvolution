@@ -3,11 +3,12 @@ from fastapi import FastAPI
 import uvicorn
 
 from core.config import settings
+from core.schemas import Pokemon
 
 app = FastAPI(title='PokEvolution')
 
 @app.get('/pokemon/{id}')
-async def retrieve_pokemon(id:int):
+async def retrieve_pokemon(id:int) -> Pokemon:
   
   response = settings.retrievePokemon(id)
   

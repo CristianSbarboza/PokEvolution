@@ -7,7 +7,7 @@ class Settings(BaseSettings):
   PokeApiUrl: str = 'https://pokeapi.co/api/v2/pokemon/'
   API_VERSION: str = 'v1'
   
-  def retrievePokemon(self, id:int) -> Pokemon:
+  def retrievePokemon(self, id:int, ) -> Pokemon:
     RetrievePokeApiUrl: str = f'https://pokeapi.co/api/v2/pokemon-form/{id}'
     response =   response = requests.get(RetrievePokeApiUrl).json()
     
