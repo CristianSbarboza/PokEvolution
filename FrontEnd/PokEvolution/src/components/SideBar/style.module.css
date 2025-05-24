@@ -1,0 +1,42 @@
+/* *{
+  border: solid 1px;
+} */
+.sideBar{
+  height: 80vh;
+  width: 25vw;
+  position: absolute;
+  right: 1.6rem;
+  top: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  & .sideOptions {
+    width: 100%;
+    object-fit: cover;
+    height: 30%;
+
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    border: none;
+}
+  & .sideOptions:hover{
+    cursor: pointer;
+  }
+  & .sideOptions:active{
+    background-color:red ;
+  }
+
+  & img{
+    width: 10rem;
+  }
+}
